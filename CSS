@@ -1,0 +1,173 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#030b18;
+color:white;
+overflow-x:hidden;
+}
+
+.stars{
+position:fixed;
+width:100%;
+height:100%;
+background:
+radial-gradient(white 1px, transparent 1px);
+background-size:40px 40px;
+animation:twinkle 5s infinite;
+z-index:-1;
+}
+
+@keyframes twinkle{
+50%{
+opacity:.4;
+}
+}
+
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 8%;
+background:rgba(0,0,0,.7);
+backdrop-filter:blur(10px);
+position:sticky;
+top:0;
+}
+
+.brand{
+display:flex;
+align-items:center;
+gap:15px;
+}
+
+.main-logo{
+width:70px;
+}
+
+.word-logo{
+width:220px;
+}
+
+.founder{
+font-size:11px;
+letter-spacing:3px;
+color:#8fbfff;
+}
+
+nav a{
+text-decoration:none;
+color:white;
+margin-left:25px;
+font-weight:bold;
+}
+
+.hero{
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+}
+
+.hero h1{
+font-size:70px;
+color:#3ea6ff;
+text-shadow:0 0 20px #3ea6ff;
+}
+
+.hero p{
+margin-top:15px;
+font-size:20px;
+}
+
+.btn{
+padding:15px 30px;
+margin-top:30px;
+background:#3ea6ff;
+color:white;
+text-decoration:none;
+border-radius:10px;
+}
+
+section{
+padding:80px 10%;
+}
+
+h2{
+text-align:center;
+margin-bottom:40px;
+color:#3ea6ff;
+}
+
+.products{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+}
+
+.product{
+background:#0d1628;
+padding:20px;
+border-radius:20px;
+text-align:center;
+transition:.4s;
+}
+
+.product:hover{
+transform:translateY(-10px);
+}
+
+.product img{
+width:100%;
+border-radius:15px;
+}
+
+.price{
+font-size:22px;
+font-weight:bold;
+color:#3ea6ff;
+margin:10px 0;
+}
+
+button{
+background:#3ea6ff;
+border:none;
+padding:12px 25px;
+border-radius:10px;
+cursor:pointer;
+color:white;
+font-weight:bold;
+}
+
+#about,
+#contact{
+text-align:center;
+}
+
+.socials{
+margin-top:25px;
+}
+
+.socials a{
+color:#3ea6ff;
+font-size:35px;
+margin:15px;
+}
+
+footer{
+padding:40px;
+text-align:center;
+background:black;
+}
+
+footer img{
+width:180px;
+margin-bottom:15px;
+}
